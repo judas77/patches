@@ -1,0 +1,28 @@
+From 419548e94774914acd5b88fea5db4dc83d6796a0 Mon Sep 17 00:00:00 2001
+From: judas77 <judas77@gazeta.pl>
+Date: Sat, 15 Aug 2015 22:21:16 +0200
+Subject: [PATCH] chromium prebuilt patch
+
+Change-Id: I1a03e22783a75fdaa02f75fc005aa66bc05f9c3f
+---
+ target/product/core_minimal.mk | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/target/product/core_minimal.mk b/target/product/core_minimal.mk
+index d0d2926..8c9dc5b 100644
+--- a/target/product/core_minimal.mk
++++ b/target/product/core_minimal.mk
+@@ -23,6 +23,10 @@ PRODUCT_DEVICE := generic
+ PRODUCT_NAME := core
+ 
+ PRODUCT_PACKAGES += \
++    libwebviewchromium_plat_support \
++    libwebviewchromium_loader
++
++PRODUCT_PACKAGES += \
+     BackupRestoreConfirmation \
+     DownloadProvider \
+     HTMLViewer \
+-- 
+1.9.1
+
