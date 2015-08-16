@@ -1,0 +1,25 @@
+From 968a5b9240d6ca6170c09e969aaac79382259d7a Mon Sep 17 00:00:00 2001
+From: judas77 <judas77@gazeta.pl>
+Date: Sun, 16 Aug 2015 15:12:01 +0200
+Subject: [PATCH] fix for cortex-a7 memchr
+
+Change-Id: I1b15fcbc56220cd8e77c643406e07ee7a13fc1db
+---
+ libc/arch-arm/cortex-a7/cortex-a7.mk | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/libc/arch-arm/cortex-a7/cortex-a7.mk b/libc/arch-arm/cortex-a7/cortex-a7.mk
+index c946c2c..94fd9af 100644
+--- a/libc/arch-arm/cortex-a7/cortex-a7.mk
++++ b/libc/arch-arm/cortex-a7/cortex-a7.mk
+@@ -2,6 +2,7 @@ libc_bionic_src_files_arm += \
+     arch-arm/cortex-a7/bionic/memset.S \
+ 
+ libc_bionic_src_files_arm += \
++    arch-arm/cortex-a15/bionic/memchr.S \
+     arch-arm/cortex-a15/bionic/memcpy.S \
+     arch-arm/cortex-a15/bionic/stpcpy.S \
+     arch-arm/cortex-a15/bionic/strcat.S \
+-- 
+1.9.1
+

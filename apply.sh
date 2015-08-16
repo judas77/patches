@@ -62,7 +62,7 @@ patches=$PWD
 cd $LOCAL_PATH
 
 pre_clean build
-pre_clean libcore
+pre_clean bionic
 
 cd $patches
 
@@ -73,4 +73,4 @@ cd $LOCAL_PATH
 # now apply it 
 
 apply_all build
-apply_all libcore
+apply_all bionic
